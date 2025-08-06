@@ -1,0 +1,113 @@
+import React from "react";
+import Slider from "react-slick";
+import slide1 from "../assets/slide1.jpg";
+import slide2 from "../assets/slide2.jpg";
+import slide3 from "../assets/slide3.jpg";
+import aboutBg from "../assets/aboutBg.jpg";
+import useIntersectionObserver from "../components/useIntersectionObserver";
+import "../index.css";
+
+const About = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const [isVisible1, ref1] = useIntersectionObserver();
+  const [isVisible2, ref2] = useIntersectionObserver();
+
+  return (
+    <div className="">
+      {/* Background Slider */}
+      <div className="relative">
+        <Slider {...settings}>
+          <div className="h-screen">
+            <img
+              src={slide1}
+              alt="Slide 1"
+              className="w-full h-full object-cover object-[center_top_30%]"
+            />
+          </div>
+          <div className="h-screen">
+            <img
+              src={slide2}
+              alt="Slide 2"
+              className="w-full h-full object-cover object-[center_top_30%]"
+            />
+          </div>
+          <div className="h-screen">
+            <img
+              src={slide3}
+              alt="Slide 3"
+              className="w-full h-full object-cover object-[center_top_30%]"
+            />
+          </div>
+        </Slider>
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50  animate-fadeIn ">
+          <h1 className="text-5xl font-comic p-2 mb-4 bg-gradient-to-r from-yellow-300 via-blue-400 to-rose-400 bg-clip-text text-transparent ">
+            Welcome to My Portfolio
+          </h1>
+          <h6 className="text-2xl pl-0 font-comic bg-gradient-to-r from-yellow-300 via-blue-400 to-red-400 bg-clip-text text-transparent  ">
+            Discover My Projects and Experience
+          </h6>
+        </div>
+      </div>
+      {/* About Section */}
+      <div
+        className="w-full p-6 text-white bg-cover bg-center"
+        style={{ backgroundImage: `url(${aboutBg})` }}
+      >
+        <div className="max-w-5xl mx-auto pb-6">
+          <h1 className="font-bold text-4xl text-center mt-10 text-white hover:text-yellow-300 transition duration-300 ">
+            About Me
+          </h1>
+          <p
+            ref={ref1}
+            className={`mt-4 leading-relaxed font-anime text-lg rounded-lg border-l-4 border-r-4 border-green-600 pl-4 overflow-hidden hover:shadow-xl hover:text-yellow-300 transform hover:scale-105 transition duration-300 ${isVisible1 ? "animate-fadeInUp" : "opacity-0"
+              }`}
+          >
+            Hello! I’m
+            <span className="font-comic mx-3 text-cyan-300 text-xl">
+              Rutik Bhamare
+            </span>
+            ,Originally from Nashik, Maharashtra, I am a dedicated Full‑Stack Developer at Tech Surya IT Solutions, where I architect and deliver web applications using technologies such as React, Node.js, Express, and MongoDB. In my role, I collaborate with cross-functional teams to develop user-centric features, optimize performance, and ensure clean and maintainable code. My strong foundation in engineering principles, coupled with hands-on professional experience, empowers me to build impactful, technology-driven solutions.
+
+          </p>
+          <p
+            ref={ref2}
+            className={`font-anime text-lg leading-relaxed mt-8 rounded-lg border-l-4 border-r-4 border-green-600 pl-4 overflow-hidden hover:shadow-xl hover:text-yellow-300 transform hover:scale-105 transition duration-300 ${isVisible2 ? "animate-fadeInUp" : "opacity-0"
+              }`}
+          >
+            I am a passionate software developer with a keen interest in
+            building impactful applications. I am ready to face challenges,
+            self-motivated, and honest in my work. My vision is to create
+            innovative software solutions that make a difference in people's
+            lives and contribute to the advancement of technology. I love coding
+            and continuously learning new technologies to stay at the forefront
+            of the tech industry.
+          </p>
+          {/* <h2 className="font-bold text-3xl  text-center mt-8 text-black-600 hover:text-yellow-300 transition duration-300">
+//             My Vision
+//           </h2>
+//           <p className="text-lg mt-4 leading-relaxed  rounded-lg border-l-4 border-r-4 border-green-600 pl-4 overflow-hidden hover:shadow-xl hover:text-yellow-300 transform hover:scale-105 transition duration-300">
+//             My vision is to create and develop amazing products that leave a
+//             lasting impact. I aspire to work with a well-renowned firm where I
+//             can leverage my skills and contribute to innovative projects. I am
+//             committed to improving myself daily, staying updated with new
+//             technologies, and mastering the latest trends in the tech industry.
+//             I aim to support my family and friends, ensuring their happiness and
+//             well-being, while earning a good salary that reflects my dedication
+//             and expertise.
+//           </p> */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
