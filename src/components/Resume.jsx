@@ -9,8 +9,8 @@ const Resume = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Harshad_Dongardive_8624966429.pdf";
-    link.download = "Harshad_Resume.pdf";
+    link.href = "/Rutik_Raviraj_Bhamare_9552467716_.pdf";
+    link.download = "Rutik_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -40,7 +40,7 @@ const Resume = () => {
             Hey there,
           </p>
         </div>
-        <h4 className="text-2xl md:text-3xl font-bold mb-4">I am HARSHAD</h4>
+        <h4 className="text-2xl md:text-3xl font-bold mb-4">I am Rutik</h4>
         <p className="mb-6 font-anime text-lg md:text-xl">
           Contact me for opportunities!
         </p>
@@ -52,7 +52,7 @@ const Resume = () => {
             Download Resume
           </button>
           <a
-            href="/Harshad_Dongardive_8624966429.pdf"
+            href="/Rutik_Raviraj_Bhamare_9552467716_.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-auto"

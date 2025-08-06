@@ -14,23 +14,20 @@ import pslick from "../assets/pslick.jpg";
 
 const projects = [
   {
-    title: "PMB : PAY MY Bills",
+    title: "Weather-App ",
     description:
-      "Managed secure user authentication for cardholders and buyers. Implemented an intuitive interface for buyers to discover and request deals",
+      "Designed and developed a weather application using React that allows users to access real-time weather information for their desired or live locations. A application also displays historical weather data. Used Open Weather API to obtain weather data.",
     techStack: ["HTML", "CSS", "JavaScript", "Flask"],
-    demoLink: "https://github.com/Harshad313D/Pay_My_Bills",
-    githubLink: "https://github.com/Harshad313D/Pay_My_Bills",
+    demoLink: "https://weather-web-nandannikhil.vercel.app",
     image: projectImage1,
   },
   {
-    title: "SSMS : Student Skills Management System",
+    title: "Stackoverflow site",
     description:
-      "Led a web project promoting Students skills and development through web apps, streamlining skills, achievements, progress, result, and grades.",
-    techStack: ["HTML", "JavaScript", "Bootstrap", "Django", "Node.js"],
+      "Stack Overflow features questions and answers on a wide range of topics. Users can ask questions and post answer on this site. It is developed using HTML, CSS, Javascript, React js, Redux and Node js.",
+    techStack: ["HTML", "JavaScript", "Bootstrap", "Node.js"],
     demoLink:
-      "https://github.com/Harshad313D/SSMS-Student-Skill-Management-System",
-    githubLink:
-      "https://github.com/Harshad313D/SSMS-Student-Skill-Management-System",
+      "https://stack-overflow-0twr.onrender.com",
     image: projectImage2,
   },
   {
@@ -39,7 +36,6 @@ const projects = [
       "This platform generates QR code from your text, you can directly scan it or download it in pdf format.",
     techStack: ["HTML", "CSS", "JS", "API integrations"],
     demoLink: "https://harshad313d.github.io/QR-Wizard/",
-    githubLink: "https://github.com/Harshad313D/QR-Wizard",
     image: projectImage3,
   },
   {
@@ -127,12 +123,7 @@ const ProjectCard = ({ project, index }) => {
               >
                 Live Demo
               </a>
-              <a
-                href={project.githubLink}
-                className="text-blue-600 hover:underline"
-              >
-                GitHub
-              </a>
+              
             </div>
           </div>
         </>
@@ -159,12 +150,7 @@ const ProjectCard = ({ project, index }) => {
               >
                 Live Demo
               </a>
-              <a
-                href={project.githubLink}
-                className="text-blue-600 hover:underline"
-              >
-                GitHub
-              </a>
+              
             </div>
           </div>
           <div className="md:w-1/2 w-full flex justify-center p-4 z-10">

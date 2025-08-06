@@ -81,35 +81,7 @@ const skills = {
       icon: <DiMongodb className="text-3xl text-green-500" />,
       level: 50,
     },
-    {
-      name: "Flask",
-      icon: <BiLogoFlask className="text-3xl text-blue-500" />,
-      level: 50,
-    },
-  ],
-  cloud: [
-    {
-      name: "AWS",
-      icon: <FaAws className="text-3xl text-black bg-orange-500 rounded-xl" />,
-      level: 60,
-    },
-    {
-      name: "GCP",
-      icon: (
-        <BiLogoGoogleCloud className="text-3xl text-blue-500 bg-white rounded-xl" />
-      ),
-      level: 45,
-    },
-    {
-      name: "Docker",
-      icon: <FaDocker className="text-3xl text-blue-500 bg-white rounded-xl" />,
-      level: 65,
-    },
-    {
-      name: "Appwrite",
-      icon: <SiAppwrite className="text-3xl text-pink-500 " />,
-      level: 50,
-    },
+   
   ],
   tools: [
     {
@@ -137,11 +109,7 @@ const skills = {
       icon: <FaWindows className="text-3xl text-blue-500" />,
       level: 70,
     },
-    {
-      name: "Linux",
-      icon: <FaLinux className="text-3xl text-black bg-white rounded-full" />,
-      level: 60,
-    },
+  
   ],
 };
 
@@ -188,7 +156,7 @@ const Skills = () => (
       <h1 className="text-4xl font-bold text-center mb-10 hover:text-cyan-300 transition duration-300">
         My Skills
       </h1>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10">
         <SkillCard
           title="Frontend "
           skills={skills.frontend}
@@ -199,11 +167,7 @@ const Skills = () => (
           skills={skills.backend}
           animation="animate-zoomIn"
         />
-        <SkillCard
-          title="Cloud"
-          skills={skills.cloud}
-          animation="animate-zoomIn"
-        />
+       
         <SkillCard
           title="Tools"
           skills={skills.tools}
