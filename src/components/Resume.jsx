@@ -9,7 +9,7 @@ const Resume = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Rutik_Raviraj_Bhamare_9552467716_.pdf";
+    link.href = "/Rutik_Raviraj_Bhamare_9552467716.pdf";
     link.download = "Rutik_Resume.pdf";
     document.body.appendChild(link);
     link.click();
