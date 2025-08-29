@@ -75,7 +75,7 @@ const About = () => {
             <span className="font-comic mx-3 text-cyan-300 text-xl">
               Rutik Bhamare
             </span>
-            ,Originally from Nashik, Maharashtra, I am a dedicated Full‑Stack Developer at Tech Surya IT Solutions, where I architect and deliver web applications using technologies such as React, Node.js, Express, and MongoDB. In my role, I collaborate with cross-functional teams to develop user-centric features, optimize performance, and ensure clean and maintainable code. My strong foundation in engineering principles, coupled with hands-on professional experience, empowers me to build impactful, technology-driven solutions.
+            ,Originally from Nashik, Maharashtra, I am a dedicated Software Engineer at ERP Consulting Services, where I architect and deliver web applications using technologies such as React, Node.js, Express, and MongoDB. In my role, I collaborate with cross-functional teams to develop user-centric features, optimize performance, and ensure clean and maintainable code. My strong foundation in engineering principles, coupled with hands-on professional experience, empowers me to build impactful, technology-driven solutions.
 
           </p>
           <p

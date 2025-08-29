@@ -160,7 +160,7 @@ const Skills = () => (
         <SkillCard
           title="Frontend "
           skills={skills.frontend}
-          animation="animate-slideInLeft"
+          animation="animate-slideInLeft" 
         />
         <SkillCard
           title="Backend"
