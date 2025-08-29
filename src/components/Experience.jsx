@@ -33,10 +33,10 @@ const Experience = () => {
               }`}
             >
               <h3 className="text-3xl font-semibold text-blue-600">
-                Tech Surya IT Solutions
+                ERP Consulting Services
               </h3>
               <p className="text-lg mt-2 font-semibold">
-                Full Stack Developer 
+                Software Engineer 
               </p>
               <p className="mt-2">
                 Worked on multiple admin dashboards, handling both frontend and
@@ -65,7 +65,7 @@ const Experience = () => {
                 Skillhub It Solutions
               </h3>
               <p className="text-lg mt-2 font-semibold">
-                Jr Web Developer (INTERNSHIP)
+               Web Developer (INTERNSHIP)
               </p>
               <p className="mt-2">
                 Maintaining and updating websites. coming up with unique front-end and modification of code with HTML, CSS, Javascript and react js. working closely with design team.
